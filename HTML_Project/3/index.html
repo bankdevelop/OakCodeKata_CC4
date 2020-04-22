@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #navbar {
+            padding: 10px;
+            background-color: brown;
+            text-align: right;
+            position: fixed;
+            width: 100%;
+        }
+
+        #navbar a {
+            padding: 10px;
+            background-color: brown;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        #navbar a:hover {
+            padding: 10px;
+            background-color: rgb(26, 149, 158);
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            height: auto;
+            margin: 10px;
+        }
+
+        #welcome-section {
+            background-color: rgb(58, 58, 58);
+            color:honeydew;
+            text-align: center;
+            height: auto;
+            padding: 25%;
+        }
+
+        #projects {
+            background-color: lightslategray;
+            padding: 100px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #title-project {
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box-project {
+            background-color: rgb(58, 58, 58);
+            width: 300px;
+            margin: 30px
+        }
+
+        .box-project p {
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        #project-list  {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        #contact {
+            background-color: rgb(58, 58, 58);
+            padding-top: 200px;
+            padding-bottom: 200px;
+            padding-left: 300px;
+            padding-right: 300px;
+            font-size: 30px;
+            color:white;
+            text-align: center;
+        }
+
+        #contact-list {
+            padding-top: 30px;
+        }
+
+        @media (max-width: 640px){
+            #navbar{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        
+    </style>
+    <div id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="welcome-section">
+        <h1 style="font-size: 60px;">Hey I am Bank</h1>
+        <div style="font-size: 25px; color: indianred;">
+            <i>a Web Developer</i>
+        </div>
+    </div>
+    <div id="projects">
+        <div id="title-project" >
+            <h1 style="text-align: center;border-bottom: 3px white solid; width: 420px;">&nbsp;&nbsp;There some of my projects&nbsp;&nbsp;</h1>
+        </div>
+        <div id="project-list">
+            <div class="box-project">
+                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" width="300" height="400">
+                <p>Tribue Page</p>
+            </div>
+            <div class="box-project">
+                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" width="300" height="400">
+                <p>Random Quote Machine</p>
+            </div>
+            <div class="box-project">
+                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" width="300" height="400">
+                <p>Javascript Calculator</p>
+            </div>
+            <div class="box-project">
+                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" width="300" height="400">
+                <p>Tic Tac Toe Game</p>
+            </div>
+            <div class="box-project">
+                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" width="300" height="400">
+                <p>Map Data Across the Globe</p>
+            </div>
+            <div class="box-project">
+                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" width="300" height="400">
+                <p>Wikipedia Viewer</p>
+            </div>
+        </div>
+        <div style="text-align: center; width: 100%;">
+            <button style="background-color: rgb(58, 58, 58);
+            color:white; border: rgb(58, 58, 58) 1px solid;
+            border-radius: 3px; padding: 10px; font-size: 20px;">
+                Show all >
+            </button>
+        </div>
+    </div>
+    <div id="contact">
+        <div id="contact-title">
+            <div style="font-size:50px;"> 
+                Let's work together
+            </div>
+            <div style="font-size: 20px; color: grey;">
+                <i>How do you take your coffee?</i>
+            </div>
+        </div>
+        <div id="contact-list">
+            <span>Facebook</span>
+            <span>Github</span>
+            <span>Twitter</span>
+            <span>@ Send a mail</span>
+            <span>Call me</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - HTML Form Validation Project</title>
+</head>
+<body>
+    <h3>A Simple Form</h3>
+    <h4><i>Form Fundamentals</i></h6>
+    <fieldset>
+        <legend>Customer Info</legend>
+        <p>
+            Name:
+            <input style="width: 350px;" type="text" name="name" placeholder="Enter your name" autofocus required>
+        </p>
+        <p>
+            Telephone:
+            <input style="width: 350px;" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Pattern: 1-234-567-8910" required>
+        </p>
+        <p>
+            Email address:
+            <input style="width: 350px;" type="email" name="name" placeholder="Enter your email address"required>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Books</legend>
+        <label>
+            <input style="width: 350px;" type="text" list="books" name="books">
+            <datalist id="books">
+                <option value="HTML5 Canvas by Steve Fulton & Jeff Fulton">
+                <option value="JavaScript: The Definitive Guide by David Flanagan">
+                <option value="HTML5 Geolocation by Anthony T. Holdener III">
+                <option value="Supercharged JavaScript Graphics by Raffaele Cecco">
+                <option value="HTML5: Up and Running by Mark Pilgrim">
+            </datalist>
+        </label>
+        Quantity (Maximum 5):
+        <input type="number" name="quantity" min="1" max="5" required>
+    </fieldset><br>
+    <input type="submit" value="submit">
+</body>
+</html>
